@@ -1,0 +1,95 @@
+/**********************************************************************/
+/*Main*/
+/**********************************************************************/
+
+/*center element in page*/
+main {
+  @include center;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .flexbox {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+  }
+
+  .result {
+    @include center;
+    justify-content: flex-end;
+    width: 540px;
+    height: 128px;
+    background-color: $Verydarkdesaturatedbluescreenbackground;
+    border-radius: 6px;
+  }
+
+  .keyboard {
+    display: grid;
+    width: 540px;
+    height: 480px;
+    background-color: $Verydarkdesaturatedbluetogglebackgroundkeypadbackground;
+
+    .buttons {
+      display: grid;
+      margin: auto;
+      grid-template-columns: repeat(4, 100px);
+      grid-template-rows: repeat(5, 60px);
+      gap: 24px;
+      grid-template-areas:
+        ". . . ."
+        ". . . ."
+        ". . . ."
+        ". . . ."
+        "reset reset equal equal";
+
+      button#del {
+        background-color: $Desaturateddarkbluekeybackground;
+        color: $White;
+        box-shadow: 0px 4px 0px 0px $Desaturateddarkbluekeyshadow;
+        cursor: pointer;
+        transition: 0.4s ease;
+
+        &:hover {
+          background: hsl(225, 24%, 64%);
+        }
+      }
+
+      button#equal {
+        width: 100%;
+        grid-area: equal;
+        background-color: $Redkeybackgroundtoggle;
+        color: $White;
+        box-shadow: 0px 4px 0px 0px $Darkredkeyshadow;
+        cursor: pointer;
+        transition: 0.4s ease;
+
+        &:hover {
+          background: rgb(234, 103, 88);
+        }
+      }
+
+      button#reset {
+        width: 100%;
+        grid-area: reset;
+        background-color: $Desaturateddarkbluekeybackground;
+        color: $White;
+        box-shadow: 0px 4px 0px 0px $Desaturateddarkbluekeyshadow;
+        cursor: pointer;
+        transition: 0.4s ease;
+
+        &:hover {
+          background: hsl(225, 24%, 64%);
+        }
+      }
+    }
+  }
+  .theme1 {
+    display: block;
+  }
+  .theme2 {
+    display: none;
+  }
+  .theme3 {
+    display: none;
+  }
+}
