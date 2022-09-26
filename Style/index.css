@@ -17,7 +17,7 @@
 /*setting body*/
 body {
   text-align: center;
-  color: var(--text);
+  background-color: var(--mainbackground);
 }
 
 button {
@@ -29,6 +29,12 @@ button {
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.4s ease;
+  background: var(--keybackgroundmain);
+  color: var(--Textkeypad);
+  box-shadow: 0px 4px 0px 0px var(--keyshadowdel);
+}
+button:hover {
+  background: var(--Keybackgroundmainhover);
 }
 
 /*Mixin*/
@@ -49,7 +55,6 @@ a:visited {
 /***** Backgrounds *****/
 /***** Keys *****/
 /***** Text *****/
-/*setting page*/
 /******************** Theme 3 ********************/
 /****** Backgrounds *****/
 /***** Keys *****/
@@ -60,32 +65,42 @@ body.theme1 {
   --togglebackgroundkeypadbackground: hsl(223deg, 31%, 20%);
   --screenbackground: hsl(224deg, 36%, 15%);
   /***** Keys *****/
-  --keybackground: hsl(225deg, 21%, 49%);
-  --keyshadow1: hsl(224deg, 28%, 35%);
-  --keybackgroundtoggle: hsl(6deg, 63%, 50%);
-  --keyshadow2: hsl(6deg, 70%, 34%);
-  --keybackground: hsl(30deg, 25%, 89%);
-  --keyshadow3: hsl(28deg, 16%, 65%);
+  --keybackgrounddel: hsl(225deg, 21%, 49%);
+  --keyshadowdel: hsl(224deg, 28%, 35%);
+  --keybackgroundtoggleegale: hsl(6deg, 63%, 50%);
+  --keyshadowegale: hsl(6deg, 70%, 34%);
+  --keybackgroundmain: hsl(30deg, 25%, 89%);
+  --keyshadowmain: hsl(28deg, 16%, 65%);
+  --Keybackgroundmainhover: hsl(0deg, 7%, 97%);
+  --Keybackgrounddelresthover: hsl(225deg, 24%, 64%);
+  --Keybackgroundegalehover: rgb(234, 103, 88);
   /***** Text *****/
-  --darkgrayishblue: hsl(221deg, 14%, 31%);
-  --text: hsl(1deg, 1%, 100%);
+  --Textnav: hsl(1deg, 1%, 100%);
+  --Textkeypad: hsl(221deg, 14%, 31%);
+  --Textdelresest: hsl(1deg, 1%, 100%);
+  --Textegale: hsl(1deg, 1%, 100%);
 }
 
 body.theme2 {
-  /***** Backgrounds *****/
+  /****** Backgrounds *****/
   --mainbackground: hsl(1deg, 1%, 90%);
   --togglebackgroundkeypadbackground: hsl(1deg, 5%, 81%);
   --screenbackground: hsl(1deg, 1%, 93%);
   /***** Keys *****/
-  --keybackground: hsl(185deg, 42%, 37%);
-  --keyshadow1: hsl(185deg, 58%, 25%);
-  --keybackgroundtoggle: hsl(25deg, 98%, 40%);
-  --keyshadow2: Darkorangekeyshadow;
-  --keybackground: hsl(45deg, 7%, 89%);
-  --keyshadow3: hsl(35deg, 11%, 61%);
+  --keybackgrounddel: hsl(185deg, 42%, 37%);
+  --keyshadowdel: hsl(185deg, 58%, 25%);
+  --keybackgroundtoggleegale: hsl(25deg, 98%, 40%);
+  --keyshadowegale: hsl(25deg, 99%, 27%);
+  --keybackgroundmain: hsl(45deg, 7%, 89%);
+  --keyshadowmain: hsl(35deg, 11%, 61%);
+  --Keybackgroundmainhover: hsl(0deg, 7%, 97%);
+  --Keybackgrounddelresthover: hsl(185deg, 42%, 45%);
+  --Keybackgroundegalehover: hsl(25deg, 98%, 60%);
   /***** Text *****/
-  --darkgrayishblue: hsl(60deg, 10%, 19%);
-  --text: hsl(1deg, 1%, 100%);
+  --Textnav: hsl(60deg, 10%, 19%);
+  --Textkeypad: hsl(60deg, 10%, 19%);
+  --Textdelresest: hsl(1deg, 1%, 100%);
+  --Textegale: hsl(60deg, 10%, 19%);
 }
 
 body.theme3 {
@@ -94,16 +109,20 @@ body.theme3 {
   --togglebackgroundkeypadbackground: hsl(268deg, 71%, 12%);
   --screenbackground: hsl(268deg, 71%, 12%);
   /***** Keys *****/
-  --keybackground: hsl(281deg, 89%, 26%);
-  --keyshadow1: hsl(285deg, 91%, 52%);
-  --keybackgroundtoggle: hsl(176deg, 100%, 44%);
-  --keyshadow2: hsl(177deg, 92%, 70%);
-  --keybackground: hsl(268deg, 47%, 21%);
-  --keyshadow3: hsl(290deg, 70%, 36%);
+  --keybackgrounddel: hsl(281deg, 89%, 26%);
+  --keyshadowdel: hsl(285deg, 91%, 52%);
+  --keybackgroundtoggleegale: hsl(176deg, 100%, 44%);
+  --keyshadowegale: hsl(177deg, 92%, 70%);
+  --keybackgroundmain: hsl(268deg, 47%, 21%);
+  --keyshadowmain: hsl(290deg, 70%, 36%);
+  --Keybackgroundmainhover: rgb(168, 47, 192);
+  --Keybackgrounddelresthover: hsl(281deg, 89%, 40%);
+  --Keybackgroundegalehover: hsl(176deg, 100%, 70%);
   /***** Text *****/
-  --text: hsl(52deg, 100%, 62%);
-  --darkgrayishblue: hsl(198deg, 20%, 13%);
-  --text2: hsl(1deg, 1%, 100%);
+  --Textnav: hsl(52deg, 100%, 62%);
+  --Textkeypad: hsl(52deg, 100%, 62%);
+  --Textdelresest: hsl(1deg, 1%, 100%);
+  --Textegale: hsl(52deg, 100%, 62%);
 }
 
 /**********************************************************************/
@@ -122,6 +141,7 @@ main .flexbox {
   flex-direction: row;
   gap: 340px;
   margin-bottom: 31px;
+  color: var(--Textnav);
 }
 main .flexbox .flexbox2 {
   display: flex;
@@ -164,6 +184,15 @@ main .flexbox .flexbox2 .theme-button .theme3btn {
   border-radius: 100px;
   margin-left: 4px;
 }
+main .flexbox .flexbox2 .theme-button .theme1clicked {
+  background-color: hsl(6deg, 63%, 50%);
+}
+main .flexbox .flexbox2 .theme-button .theme2clicked {
+  background-color: hsl(25deg, 98%, 40%);
+}
+main .flexbox .flexbox2 .theme-button .theme3clicked {
+  background-color: hsl(176deg, 100%, 44%);
+}
 main .result {
   display: flex;
   align-items: center;
@@ -172,6 +201,8 @@ main .result {
   width: 540px;
   height: 128px;
   border-radius: 6px;
+  background-color: var(--screenbackground);
+  color: var(--Textegale);
 }
 main .result .display {
   margin-right: 20px;
@@ -181,6 +212,7 @@ main .keyboard {
   display: grid;
   width: 540px;
   height: 480px;
+  background-color: var(--togglebackgroundkeypadbackground);
 }
 main .keyboard .buttons {
   display: grid;
@@ -191,175 +223,38 @@ main .keyboard .buttons {
   grid-template-areas: ". . . ." ". . . ." ". . . ." ". . . ." "reset reset equal equal";
 }
 main .keyboard .buttons button#del {
-  color: hsl(1deg, 1%, 100%);
+  color: var(--Textdelresest);
   cursor: pointer;
+  background-color: var(--keybackgrounddel);
+  box-shadow: 0px 4px 0px 0px var(--keyshadowdel);
   transition: 0.4s ease;
 }
+main .keyboard .buttons button#del:hover {
+  background: var(--Keybackgrounddelresthover);
+}
 main .keyboard .buttons button#equal {
+  color: var(--Testegale);
   width: 100%;
   grid-area: equal;
   cursor: pointer;
+  background-color: var(--keybackgroundtoggleegale);
+  box-shadow: 0px 4px 0px 0px var(--keyshadowegale);
   transition: 0.4s ease;
+}
+main .keyboard .buttons button#equal:hover {
+  background: var(--Keybackgroundegalehover);
 }
 main .keyboard .buttons button#reset {
+  color: var(--Textdelresest);
   width: 100%;
   grid-area: reset;
-  color: hsl(1deg, 1%, 100%);
   cursor: pointer;
+  background-color: var(--keybackgrounddel);
+  box-shadow: 0px 4px 0px 0px var(--keyshadowdel);
   transition: 0.4s ease;
 }
-
-/**********************************************************************/
-/*Theme1*/
-/**********************************************************************/
-.theme1 {
-  background-color: hsl(222deg, 26%, 31%);
-  color: hsl(1deg, 1%, 100%);
-  transition: 0.4s ease;
-}
-.theme1 button {
-  background: hsl(30deg, 25%, 89%);
-  color: hsl(225deg, 21%, 49%);
-  box-shadow: 0px 4px 0px 0px hsl(28deg, 16%, 65%);
-}
-.theme1 button:hover {
-  background: hsl(1deg, 1%, 100%);
-}
-.theme1 .theme1clicked {
-  background-color: hsl(6deg, 63%, 50%);
-}
-.theme1 .theme-button {
-  background-color: hsl(223deg, 31%, 20%);
-}
-.theme1 .result {
-  background-color: hsl(224deg, 36%, 15%);
-}
-.theme1 .keyboard {
-  background-color: hsl(223deg, 31%, 20%);
-}
-.theme1 .keyboard button#del {
-  background-color: hsl(225deg, 21%, 49%);
-  box-shadow: 0px 4px 0px 0px hsl(224deg, 28%, 35%);
-}
-.theme1 .keyboard button#del:hover {
-  background: hsl(225deg, 24%, 64%);
-}
-.theme1 .keyboard button#equal {
-  background-color: hsl(6deg, 63%, 50%);
-  box-shadow: 0px 4px 0px 0px hsl(6deg, 70%, 34%);
-  color: hsl(1deg, 1%, 100%);
-}
-.theme1 .keyboard button#equal:hover {
-  background: rgb(234, 103, 88);
-}
-.theme1 .keyboard button#reset {
-  background-color: hsl(225deg, 21%, 49%);
-  box-shadow: 0px 4px 0px 0px hsl(224deg, 28%, 35%);
-}
-.theme1 .keyboard button#reset:hover {
-  background: hsl(225deg, 24%, 64%);
-}
-
-/**********************************************************************/
-/*Theme2*/
-/**********************************************************************/
-.theme2 {
-  background-color: hsl(1deg, 1%, 90%);
-  color: hsl(60deg, 10%, 19%);
-  transition: 0.4s ease;
-}
-.theme2 button {
-  background: hsl(45deg, 7%, 89%);
-  color: hsl(60deg, 10%, 19%);
-  box-shadow: 0px 4px 0px 0px hsl(35deg, 11%, 61%);
-}
-.theme2 button:hover {
-  background: hsl(1deg, 1%, 100%);
-}
-.theme2 .theme2clicked {
-  background-color: hsl(25deg, 98%, 40%);
-}
-.theme2 .theme-button {
-  background-color: hsl(1deg, 5%, 81%);
-}
-.theme2 .result {
-  background-color: hsl(1deg, 1%, 93%);
-}
-.theme2 .keyboard {
-  background-color: hsl(1deg, 5%, 81%);
-}
-.theme2 .keyboard button#del {
-  background-color: hsl(185deg, 42%, 37%);
-  box-shadow: 0px 4px 0px 0px hsl(185deg, 58%, 25%);
-  color: hsl(1deg, 1%, 100%);
-}
-.theme2 .keyboard button#del:hover {
-  background-color: hsl(185deg, 42%, 45%);
-}
-.theme2 .keyboard button#equal {
-  background-color: hsl(25deg, 98%, 40%);
-  box-shadow: 0px 4px 0px 0px hsl(25deg, 99%, 27%);
-}
-.theme2 .keyboard button#equal:hover {
-  background: hsl(25deg, 98%, 60%);
-}
-.theme2 .keyboard button#reset {
-  background-color: hsl(185deg, 42%, 37%);
-  box-shadow: 0px 4px 0px 0px hsl(185deg, 58%, 25%);
-}
-.theme2 .keyboard button#reset:hover {
-  background-color: hsl(185deg, 42%, 45%);
-}
-
-/**********************************************************************/
-/*Theme3*/
-/**********************************************************************/
-.theme3 {
-  background-color: hsl(268deg, 75%, 9%);
-  color: hsl(52deg, 100%, 62%);
-  transition: 0.4s ease;
-}
-.theme3 button {
-  background: hsl(268deg, 47%, 21%);
-  color: hsl(52deg, 100%, 62%);
-  box-shadow: 0px 4px 0px 0px hsl(290deg, 70%, 36%);
-}
-.theme3 button:hover {
-  background: hsl(268deg, 47%, 40%);
-}
-.theme3 .theme3clicked {
-  background-color: hsl(176deg, 100%, 44%);
-}
-.theme3 .theme-button {
-  background-color: hsl(268deg, 71%, 12%);
-}
-.theme3 .result {
-  background-color: hsl(268deg, 71%, 12%);
-}
-.theme3 .keyboard {
-  background-color: hsl(268deg, 71%, 12%);
-}
-.theme3 .keyboard button#del {
-  background-color: hsl(281deg, 89%, 26%);
-  box-shadow: 0px 4px 0px 0px hsl(285deg, 91%, 52%);
-}
-.theme3 .keyboard button#del:hover {
-  background: hsl(281deg, 89%, 40%);
-}
-.theme3 .keyboard button#equal {
-  background-color: hsl(176deg, 100%, 44%);
-  box-shadow: 0px 4px 0px 0px hsl(177deg, 92%, 70%);
-  color: hsl(198deg, 20%, 13%);
-}
-.theme3 .keyboard button#equal:hover {
-  background: hsl(176deg, 100%, 70%);
-}
-.theme3 .keyboard button#reset {
-  background-color: hsl(281deg, 89%, 26%);
-  box-shadow: 0px 4px 0px 0px hsl(285deg, 91%, 52%);
-}
-.theme3 .keyboard button#reset:hover {
-  background: hsl(281deg, 89%, 40%);
+main .keyboard .buttons button#reset:hover {
+  background: var(--Keybackgrounddelresthover);
 }
 
 /*****align footer and set size and color*****/

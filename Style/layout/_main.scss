@@ -13,6 +13,7 @@ main {
     @include row;
     gap: 340px;
     margin-bottom: 31px;
+    color: var(--Textnav);
 
     .flexbox2 {
       @include row;
@@ -73,6 +74,7 @@ main {
     height: 128px;
     border-radius: 6px;
     background-color: var(--screenbackground);
+    color: var(--Textegale);
 
     .display {
       margin-right: 20px;

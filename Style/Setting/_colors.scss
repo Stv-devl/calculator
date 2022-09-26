@@ -32,7 +32,7 @@ $Backgroundkeypadth2: hsl(1, 5, 81%);
 $Screenbackgroundth2: hsl(1, 1, 93%);
 /***** Keys *****/
 $Keybackgrounddelth2: hsl(185, 42, 37%);
-$Keyshadowdelt2: hsl(185, 58, 25%);
+$Keyshadowdelth2: hsl(185, 58, 25%);
 $Keybackgroundtoggleegaleth2: hsl(25, 98, 40%);
 $keyshadowegaleth2: hsl(25, 99, 27%);
 $Keybackgroundmainth2: hsl(45, 7, 89%);
@@ -65,7 +65,7 @@ $Keybackgroundegalehoverth3: hsl(176, 100, 70%);
 $Textnavth3: hsl(52, 100, 62%);
 $Textkeypadth3: hsl(52, 100, 62%);
 $Textdelresestth3: hsl(1, 1, 100%);
-$Testegaleth3: hsl(198, 20, 13%);
+$Testegaleth3: hsl(52, 100, 62%);
 
 body.theme1 {
   /****** Backgrounds *****/
@@ -86,7 +86,7 @@ body.theme1 {
   --Textnav: #{$Textnavth1};
   --Textkeypad: #{$Textkeypadth1};
   --Textdelresest: #{$Textdelresestth1};
-  --Testegale: #{$Testegaleth1};
+  --Textegale: #{$Testegaleth1};
 }
 body.theme2 {
   /****** Backgrounds *****/
@@ -107,7 +107,7 @@ body.theme2 {
   --Textnav: #{$Textnavth2};
   --Textkeypad: #{$Textkeypadth2};
   --Textdelresest: #{$Textdelresestth2};
-  --Testegale: #{$Testegaleth2};
+  --Textegale: #{$Testegaleth2};
 }
 body.theme3 {
   /****** Backgrounds *****/
@@ -118,7 +118,7 @@ body.theme3 {
   --keybackgrounddel: #{$Keybackgrounddelth3};
   --keyshadowdel: #{$Keyshadowdelth3};
   --keybackgroundtoggleegale: #{$Keybackgroundtoggleegaleth3};
-  --keyshadowegale: #{$keyshadowegalet3};
+  --keyshadowegale: #{$keyshadowegaleth3};
   --keybackgroundmain: #{$Keybackgroundmainth3};
   --keyshadowmain: #{$Keybackgroundmainshadowth3};
   --Keybackgroundmainhover: #{$Keybackgroundmainhoverth3};
@@ -128,5 +128,5 @@ body.theme3 {
   --Textnav: #{$Textnavth3};
   --Textkeypad: #{$Textkeypadth3};
   --Textdelresest: #{$Textdelresestth3};
-  --Testegale: #{$Testegaleth3};
+  --Textegale: #{$Testegaleth3};
 }
