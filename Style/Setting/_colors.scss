@@ -1,0 +1,132 @@
+/********************************************************************/
+/***************************Setting colors***************************/
+/********************************************************************/
+
+/******************** Theme 1 ********************/
+
+/*****Backgrounds *****/
+$Mainbackgroundth1: hsl(222, 26%, 31%);
+$Backgroundkeypadth1: hsl(223, 31%, 20%);
+$Screenbackgroundth1: hsl(224, 36%, 15%);
+
+/***** Keys *****/
+$Keybackgrounddelth1: hsl(225, 21%, 49%);
+$Keyshadowdelth1: hsl(224, 28%, 35%);
+$Keybackgroundtoggleegaleth1: hsl(6, 63%, 50%);
+$keyshadowegaleth1: hsl(6, 70%, 34%);
+$Keybackgroundmainth1: hsl(30, 25%, 89%);
+$Keybackgroundmainshadowth1: hsl(28, 16%, 65%);
+$Keybackgroundmainhoverth1: hsl(0, 7%, 97%);
+$Keybackgrounddelresthoverth1: hsl(225, 24%, 64%);
+$Keybackgroundegalehoverth1: rgb(234, 103, 88);
+/***** Text *****/
+$Textnavth1: hsl(1, 1, 100%);
+$Textkeypadth1: hsl(221, 14, 31%);
+$Textdelresestth1: hsl(1, 1, 100%);
+$Testegaleth1: hsl(1, 1, 100%);
+
+/******************** Theme 2 ********************/
+/***** Backgrounds *****/
+$Mainbackgroundth2: hsl(1, 1, 90%);
+$Backgroundkeypadth2: hsl(1, 5, 81%);
+$Screenbackgroundth2: hsl(1, 1, 93%);
+/***** Keys *****/
+$Keybackgrounddelth2: hsl(185, 42, 37%);
+$Keyshadowdelt2: hsl(185, 58, 25%);
+$Keybackgroundtoggleegaleth2: hsl(25, 98, 40%);
+$keyshadowegaleth2: hsl(25, 99, 27%);
+$Keybackgroundmainth2: hsl(45, 7, 89%);
+$Keybackgroundmainshadowth2: hsl(35, 11, 61%);
+$Keybackgroundmainhoverth2: hsl(0, 7%, 97%);
+$Keybackgrounddelresthoverth2: hsl(185, 42, 45%);
+$Keybackgroundegalehoverth2: hsl(25, 98, 60%);
+/***** Text *****/
+$Textnavth2: hsl(60, 10, 19%);
+$Textkeypadth2: hsl(60, 10, 19%);
+$Textdelresestth2: hsl(1, 1, 100%);
+$Testegaleth2: hsl(60, 10, 19%);
+
+/******************** Theme 3 ********************/
+/****** Backgrounds *****/
+$Mainbackgroundth3: hsl(268, 75%, 9%);
+$Backgroundkeypadth3: hsl(268, 71%, 12%);
+$Screenbackgroundth3: hsl(268, 71%, 12%);
+/***** Keys *****/
+$Keybackgrounddelth3: hsl(281, 89, 26%);
+$Keyshadowdelth3: hsl(285, 91, 52%);
+$Keybackgroundtoggleegaleth3: hsl(176, 100, 44%);
+$keyshadowegaleth3: hsl(177, 92, 70%);
+$Keybackgroundmainth3: hsl(268, 47, 21%);
+$Keybackgroundmainshadowth3: hsl(290, 70, 36%);
+$Keybackgroundmainhoverth3: rgb(168, 47, 192);
+$Keybackgrounddelresthoverth3: hsl(281, 89, 40%);
+$Keybackgroundegalehoverth3: hsl(176, 100, 70%);
+/***** Text *****/
+$Textnavth3: hsl(52, 100, 62%);
+$Textkeypadth3: hsl(52, 100, 62%);
+$Textdelresestth3: hsl(1, 1, 100%);
+$Testegaleth3: hsl(198, 20, 13%);
+
+body.theme1 {
+  /****** Backgrounds *****/
+  --mainbackground: #{$Mainbackgroundth1};
+  --togglebackgroundkeypadbackground: #{$Backgroundkeypadth1};
+  --screenbackground: #{$Screenbackgroundth1};
+  /***** Keys *****/
+  --keybackgrounddel: #{$Keybackgrounddelth1};
+  --keyshadowdel: #{$Keyshadowdelth1};
+  --keybackgroundtoggleegale: #{$Keybackgroundtoggleegaleth1};
+  --keyshadowegale: #{$keyshadowegaleth1};
+  --keybackgroundmain: #{$Keybackgroundmainth1};
+  --keyshadowmain: #{$Keybackgroundmainshadowth1};
+  --Keybackgroundmainhover: #{$Keybackgroundmainhoverth1};
+  --Keybackgrounddelresthover: #{$Keybackgrounddelresthoverth1};
+  --Keybackgroundegalehover: #{$Keybackgroundegalehoverth1};
+  /***** Text *****/
+  --Textnav: #{$Textnavth1};
+  --Textkeypad: #{$Textkeypadth1};
+  --Textdelresest: #{$Textdelresestth1};
+  --Testegale: #{$Testegaleth1};
+}
+body.theme2 {
+  /****** Backgrounds *****/
+  --mainbackground: #{$Mainbackgroundth2};
+  --togglebackgroundkeypadbackground: #{$Backgroundkeypadth2};
+  --screenbackground: #{$Screenbackgroundth2};
+  /***** Keys *****/
+  --keybackgrounddel: #{$Keybackgrounddelth2};
+  --keyshadowdel: #{$Keyshadowdelth2};
+  --keybackgroundtoggleegale: #{$Keybackgroundtoggleegaleth2};
+  --keyshadowegale: #{$keyshadowegaleth2};
+  --keybackgroundmain: #{$Keybackgroundmainth2};
+  --keyshadowmain: #{$Keybackgroundmainshadowth2};
+  --Keybackgroundmainhover: #{$Keybackgroundmainhoverth2};
+  --Keybackgrounddelresthover: #{$Keybackgrounddelresthoverth2};
+  --Keybackgroundegalehover: #{$Keybackgroundegalehoverth2};
+  /***** Text *****/
+  --Textnav: #{$Textnavth2};
+  --Textkeypad: #{$Textkeypadth2};
+  --Textdelresest: #{$Textdelresestth2};
+  --Testegale: #{$Testegaleth2};
+}
+body.theme3 {
+  /****** Backgrounds *****/
+  --mainbackground: #{$Mainbackgroundth3};
+  --togglebackgroundkeypadbackground: #{$Backgroundkeypadth3};
+  --screenbackground: #{$Screenbackgroundth3};
+  /***** Keys *****/
+  --keybackgrounddel: #{$Keybackgrounddelth3};
+  --keyshadowdel: #{$Keyshadowdelth3};
+  --keybackgroundtoggleegale: #{$Keybackgroundtoggleegaleth3};
+  --keyshadowegale: #{$keyshadowegalet3};
+  --keybackgroundmain: #{$Keybackgroundmainth3};
+  --keyshadowmain: #{$Keybackgroundmainshadowth3};
+  --Keybackgroundmainhover: #{$Keybackgroundmainhoverth3};
+  --Keybackgrounddelresthover: #{$Keybackgrounddelresthoverth3};
+  --Keybackgroundegalehover: #{$Keybackgroundegalehoverth3};
+  /***** Text *****/
+  --Textnav: #{$Textnavth3};
+  --Textkeypad: #{$Textkeypadth3};
+  --Textdelresest: #{$Textdelresestth3};
+  --Testegale: #{$Testegaleth3};
+}
