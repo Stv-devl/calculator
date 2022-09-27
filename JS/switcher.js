@@ -1,5 +1,4 @@
 //variables
-
 const theme1btn = document.querySelector(".theme1btn");
 const theme2btn = document.querySelector(".theme2btn");
 const theme3btn = document.querySelector(".theme3btn");
