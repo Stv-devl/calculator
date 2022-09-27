@@ -28,13 +28,17 @@ button {
   border-radius: 8px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: 0.4s ease;
+  transition: 0.2s ease;
   background: var(--keybackgroundmain);
   color: var(--Textkeypad);
-  box-shadow: 0px 4px 0px 0px var(--keyshadowdel);
+  box-shadow: 0px 4px 0px 0px var(--keyshadowmain);
 }
 button:hover {
   background: var(--Keybackgroundmainhover);
+}
+button:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 0;
 }
 
 /*Mixin*/
@@ -166,6 +170,7 @@ main .flexbox .flexbox2 .theme-button {
   padding: 5px;
   border-radius: 15px;
   cursor: pointer;
+  background-color: var(--screenbackground);
 }
 main .flexbox .flexbox2 .theme-button .theme1btn {
   width: 18px;
@@ -227,10 +232,13 @@ main .keyboard .buttons button#del {
   cursor: pointer;
   background-color: var(--keybackgrounddel);
   box-shadow: 0px 4px 0px 0px var(--keyshadowdel);
-  transition: 0.4s ease;
+  transition: 0.2s ease;
 }
 main .keyboard .buttons button#del:hover {
   background: var(--Keybackgrounddelresthover);
+}
+main .keyboard .buttons button#del:active {
+  box-shadow: 0 0 0 0;
 }
 main .keyboard .buttons button#equal {
   color: var(--Testegale);
@@ -239,10 +247,13 @@ main .keyboard .buttons button#equal {
   cursor: pointer;
   background-color: var(--keybackgroundtoggleegale);
   box-shadow: 0px 4px 0px 0px var(--keyshadowegale);
-  transition: 0.4s ease;
+  transition: 0.2s ease;
 }
 main .keyboard .buttons button#equal:hover {
   background: var(--Keybackgroundegalehover);
+}
+main .keyboard .buttons button#equal:active {
+  box-shadow: 0 0 0 0;
 }
 main .keyboard .buttons button#reset {
   color: var(--Textdelresest);
@@ -251,10 +262,13 @@ main .keyboard .buttons button#reset {
   cursor: pointer;
   background-color: var(--keybackgrounddel);
   box-shadow: 0px 4px 0px 0px var(--keyshadowdel);
-  transition: 0.4s ease;
+  transition: 0.2s ease;
 }
 main .keyboard .buttons button#reset:hover {
   background: var(--Keybackgrounddelresthover);
+}
+main .keyboard .buttons button#reset:active {
+  box-shadow: 0 0 0 0;
 }
 
 /*****align footer and set size and color*****/
