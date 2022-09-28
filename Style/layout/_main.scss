@@ -48,7 +48,6 @@ main {
           border-radius: 100px;
           margin-left: 4px;
         }
-
         .theme3btn {
           width: 18px;
           height: 18px;
@@ -57,28 +56,43 @@ main {
         }
         .theme1clicked {
           background-color: $Keybackgroundtoggleegaleth1;
+          &:hover {
+            background: var(--Keybackgroundegalehover);
+          }
         }
         .theme2clicked {
           background-color: $Keybackgroundtoggleegaleth2;
+          &:hover {
+            background: var(--Keybackgroundegalehover);
+          }
         }
         .theme3clicked {
           background-color: $Keybackgroundtoggleegaleth3;
+          &:hover {
+            background: var(--Keybackgroundegalehover);
+          }
         }
       }
     }
   }
 
   .result {
-    @include center;
-    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
     width: 540px;
     height: 128px;
-    border-radius: 6px;
+    border-radius: 8px;
+    padding: 10px 25px;
     background-color: var(--screenbackground);
     color: var(--Textegale);
+    margin-bottom: 24px;
 
+    .display2 {
+      font-size: 18px;
+    }
     .display {
-      margin-right: 20px;
       font-size: 32px;
     }
   }
@@ -87,6 +101,7 @@ main {
     display: grid;
     width: 540px;
     height: 480px;
+    border-radius: 8px;
     background-color: var(--togglebackgroundkeypadbackground);
 
     .buttons {

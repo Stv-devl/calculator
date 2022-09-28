@@ -192,31 +192,45 @@ main .flexbox .flexbox2 .theme-button .theme3btn {
 main .flexbox .flexbox2 .theme-button .theme1clicked {
   background-color: hsl(6deg, 63%, 50%);
 }
+main .flexbox .flexbox2 .theme-button .theme1clicked:hover {
+  background: var(--Keybackgroundegalehover);
+}
 main .flexbox .flexbox2 .theme-button .theme2clicked {
   background-color: hsl(25deg, 98%, 40%);
+}
+main .flexbox .flexbox2 .theme-button .theme2clicked:hover {
+  background: var(--Keybackgroundegalehover);
 }
 main .flexbox .flexbox2 .theme-button .theme3clicked {
   background-color: hsl(176deg, 100%, 44%);
 }
+main .flexbox .flexbox2 .theme-button .theme3clicked:hover {
+  background: var(--Keybackgroundegalehover);
+}
 main .result {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
   width: 540px;
   height: 128px;
-  border-radius: 6px;
+  border-radius: 8px;
+  padding: 10px 25px;
   background-color: var(--screenbackground);
   color: var(--Textegale);
+  margin-bottom: 24px;
+}
+main .result .display2 {
+  font-size: 18px;
 }
 main .result .display {
-  margin-right: 20px;
   font-size: 32px;
 }
 main .keyboard {
   display: grid;
   width: 540px;
   height: 480px;
+  border-radius: 8px;
   background-color: var(--togglebackgroundkeypadbackground);
 }
 main .keyboard .buttons {
