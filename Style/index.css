@@ -222,6 +222,7 @@ main .result {
 }
 main .result .display2 {
   font-size: 18px;
+  letter-spacing: 2px;
 }
 main .result .display {
   font-size: 32px;

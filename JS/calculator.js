@@ -1,84 +1,49 @@
+//variables
 const display = document.querySelector(".display");
-const display2 = document.querySelector(".display2");
+const previousdisplay = document.querySelector(".previousdisplay");
 const buttons = document.querySelectorAll(".btn");
-const calc = document.querySelectorAll(".calc");
+const operationbtn = document.querySelectorAll(".operation");
+let previous = false;
 
+//display the id of the buttons on the screen
 buttons.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     display.textContent += e.target.id;
   });
 });
 
-calc.forEach((calcbtn) => {
-  calcbtn.addEventListener("click", (e) => {
-    display2.textContent = display.textContent;
-    display.textContent = "";
-    calcul = e.target.id;
+//when you click on the operation button the numbers move to previousdisplay. IF previousdisplay is true when you click on operation you will calculate last number & new number
+operationbtn.forEach((opbtn) => {
+  opbtn.addEventListener("click", (e) => {
+    if (previous == false) {
+      previousdisplay.textContent = display.textContent + e.target.id;
+      previous = true;
+      display.textContent = "";
+    } else {
+      display.textContent = eval(
+        previousdisplay.textContent + display.textContent
+      );
+      previousdisplay.textContent = display.textContent + e.target.id;
+      display.textContent = "";
+    }
   });
 });
 
+//equal button => we calculate according to display & previousdisplay
 equal.addEventListener("click", () => {
-  display.textContent = eval(display2.textContent + display.textContent);
-  display2.textContent = "";
+  display.textContent = eval(previousdisplay.textContent + display.textContent);
+  previousdisplay.textContent = "";
   ("");
 });
 
+//reset button => returns to 0
 reset.addEventListener("click", () => {
   display.textContent = "";
-  display2.textContent = "";
+  previousdisplay.textContent = "";
 });
 
+//del button => we remove 1 digit
 del.addEventListener("click", () => {
   display.textContent = display.textContent.slice(0, -1);
-  display2.textContent = display2.textContent.slice(0, -1);
+  previousdisplay.textContent = previousdisplay.textContent.slice(0, -1);
 });
-
-/*
-const calculate = () => {
-  if (number_people > 0 && bill > 0 && calcTip > 0) {
-    totalTip = ((bill * calcTip) / number_people).toFixed(2); //tip amount
-    totalPeople = ((bill * calcPeople) / number_people).toFixed(2); //total price person
-    amountTip.textContent = `$${totalTip}`;
-    amountTotal.textContent = `$${totalPeople}`;
-    choosenumber.textContent = "";
-  }
-
-  const display = document.querySelector(".display");
-  const display2 = document.querySelector(".display2");
-  const buttons = document.querySelectorAll(".btn");
-  const calc = document.querySelectorAll(".calc");
-  let calcul;
-  
-  console.log(calc);
-  
-  calc.forEach((calcbtn) => {
-    calcbtn.addEventListener("click", (e) => {
-      display2.textContent += display.textContent + e.target.id;
-      display.textContent = "";
-      console.log(display);
-      console.log(display2);
-    });
-  });
-
-  buttons.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      display.textContent += e.target.id;
-      calcul = display.textContent;
-  
-      console.log(calcul);
-    });
-  });
-  
-  equal.addEventListener("click", () => {
-    display.textContent = eval(display.textContent);
-  });
-  
-  reset.addEventListener("click", () => {
-    display.textContent = "";
-    display2.textContent = "";
-  });
-  
-  del.addEventListener("click", () => {
-    display.textContent = display.textContent.slice(0, -1);
-  });
-  */
