@@ -19,6 +19,7 @@
 body {
   text-align: center;
   background-color: var(--mainbackground);
+  transition: background-color 0.3s ease-in-out;
 }
 
 button {
@@ -41,8 +42,12 @@ button {
     transform: translateY(4px);
     box-shadow: 0 0 0 0;
   }
+  /********************Media********************/
+  @media screen and (max-width: 471px) {
+    font-size: 25px;
+  }
+  /*********************************************/
 }
-
 /*Mixin*/
 @mixin center {
   display: flex;

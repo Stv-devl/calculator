@@ -2,7 +2,7 @@
 /***************************Setting colors***************************/
 /********************************************************************/
 
-/******************** Theme 1 ********************/
+/******************** Theme 1 : dark ********************/
 
 /*****Backgrounds *****/
 $Mainbackgroundth1: hsl(222, 26%, 31%);
@@ -23,9 +23,10 @@ $Keybackgroundegalehoverth1: rgb(234, 103, 88);
 $Textnavth1: hsl(1, 1, 100%);
 $Textkeypadth1: hsl(221, 14, 31%);
 $Textdelresestth1: hsl(1, 1, 100%);
-$Testegaleth1: hsl(1, 1, 100%);
+$Textegaleth1: hsl(1, 1, 100%);
+$TextPreviousDisplayth1: rgb(205, 205, 205);
 
-/******************** Theme 2 ********************/
+/******************** Theme 2  : light ********************/
 /***** Backgrounds *****/
 $Mainbackgroundth2: hsl(1, 1, 90%);
 $Backgroundkeypadth2: hsl(1, 5, 81%);
@@ -44,7 +45,8 @@ $Keybackgroundegalehoverth2: hsl(25, 98, 60%);
 $Textnavth2: hsl(60, 10, 19%);
 $Textkeypadth2: hsl(60, 10, 19%);
 $Textdelresestth2: hsl(1, 1, 100%);
-$Testegaleth2: hsl(60, 10, 19%);
+$Textegaleth2: hsl(1, 1, 100%);
+$TextPreviousDisplayth2: rgb(108, 104, 104);
 
 /******************** Theme 3 ********************/
 /****** Backgrounds *****/
@@ -65,9 +67,10 @@ $Keybackgroundegalehoverth3: hsl(176, 100, 70%);
 $Textnavth3: hsl(52, 100, 62%);
 $Textkeypadth3: hsl(52, 100, 62%);
 $Textdelresestth3: hsl(1, 1, 100%);
-$Testegaleth3: hsl(52, 100, 62%);
+$Textegaleth3: hsl(60, 10, 19%);
+$TextPreviousDisplayth3: rgb(143, 126, 14);
 
-body.theme1 {
+.dark {
   /****** Backgrounds *****/
   --mainbackground: #{$Mainbackgroundth1};
   --togglebackgroundkeypadbackground: #{$Backgroundkeypadth1};
@@ -86,9 +89,10 @@ body.theme1 {
   --Textnav: #{$Textnavth1};
   --Textkeypad: #{$Textkeypadth1};
   --Textdelresest: #{$Textdelresestth1};
-  --Textegale: #{$Testegaleth1};
+  --Textegale: #{$Textegaleth1};
+  --TextPreviousDisplay: #{$TextPreviousDisplayth1};
 }
-body.theme2 {
+.light {
   /****** Backgrounds *****/
   --mainbackground: #{$Mainbackgroundth2};
   --togglebackgroundkeypadbackground: #{$Backgroundkeypadth2};
@@ -107,9 +111,10 @@ body.theme2 {
   --Textnav: #{$Textnavth2};
   --Textkeypad: #{$Textkeypadth2};
   --Textdelresest: #{$Textdelresestth2};
-  --Textegale: #{$Testegaleth2};
+  --Textegale: #{$Textegaleth2};
+  --TextPreviousDisplay: #{$TextPreviousDisplayth2};
 }
-body.theme3 {
+.theme3 {
   /****** Backgrounds *****/
   --mainbackground: #{$Mainbackgroundth3};
   --togglebackgroundkeypadbackground: #{$Backgroundkeypadth3};
@@ -128,5 +133,6 @@ body.theme3 {
   --Textnav: #{$Textnavth3};
   --Textkeypad: #{$Textkeypadth3};
   --Textdelresest: #{$Textdelresestth3};
-  --Textegale: #{$Testegaleth3};
+  --Textegale: #{$Textegaleth3};
+  --TextPreviousDisplay: #{$TextPreviousDisplayth3};
 }
