@@ -5,6 +5,11 @@ const buttons = document.querySelectorAll(".btn");
 const operationbtn = document.querySelectorAll(".operation");
 let previous = false;
 
+//clear display.textyContent
+function clearTextContent() {
+  display.textContent = "";
+}
+
 //display the id of the buttons on the screen
 buttons.forEach((btn) => {
   btn.addEventListener("click", (e) => {
@@ -17,14 +22,14 @@ operationbtn.forEach((opbtn) => {
   opbtn.addEventListener("click", (e) => {
     if (previous == false) {
       previousdisplay.textContent = display.textContent + e.target.id;
-      previous = true;
-      display.textContent = "";
+      clearTextContent();
+      return (previous = true);
     } else {
       display.textContent = eval(
         previousdisplay.textContent + display.textContent
       );
       previousdisplay.textContent = display.textContent + e.target.id;
-      display.textContent = "";
+      clearTextContent();
     }
   });
 });

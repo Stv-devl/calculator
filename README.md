@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot/Screenshot%202022-10-16%20at%2011-41-15%20Frontend%20Mentor%20Calculator%20app.png)
 
 ### Links
 
@@ -48,12 +48,13 @@ Users should be able to:
 
 ### What I learned
 
-=> theme preference
-=> us e.target.id for calculate
+- I learned to use desktop theme preference. And to change theme between 3 themes.
+- For get the numbers to calculate I used e.target.id of each buttons.
+- When we click on an operator button (+, -, /,\*) the number (e.target.id) became a "previousNumber" and be display in "previousdisplay" this number will be calculate with the next numbers until we click on egal for have the total. Every time we click on a operator button we will get preview of the total price in "previousdisplay"
 
 ### Continued development
 
-Practice
+Practice more javascript
 
 ## Author
 

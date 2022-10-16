@@ -25,6 +25,7 @@ function starterTheme() {
 }
 starterTheme();
 
+//change themes with buttons :
 //theme 1 : light button
 light.addEventListener("click", () => {
   light.classList.add("lightclicked");
